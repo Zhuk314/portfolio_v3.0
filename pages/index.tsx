@@ -6,10 +6,12 @@ const Home: NextPage = () => {
   return (
     <div className="bg-backgroundPrimary">
       <Head>
-        <title>Create Next App</title>
+        <title>Yurii Zhuk</title>
       </Head>
 
       <Header />
+
+      {/* Welcome */}
 
       {/* About */}
 
