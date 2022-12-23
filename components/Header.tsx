@@ -2,6 +2,6 @@ import React from "react";
 
 type Props = {};
 
-export default function Header({}: Props) {
+export const Header = ({}: Props) => {
   return <div>Header</div>;
-}
+};
