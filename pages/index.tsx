@@ -8,7 +8,16 @@ const Home: NextPage = () => {
       <Head>
         <title>Create Next App</title>
       </Head>
+
       <Header />
+
+      {/* About */}
+
+      {/* Skills */}
+
+      {/* Experience */}
+
+      {/* To be ... */}
     </div>
   );
 };
