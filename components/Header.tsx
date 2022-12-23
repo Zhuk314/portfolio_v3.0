@@ -1,7 +1,12 @@
 import React from "react";
+import { SocialIcon } from "react-social-icons";
+type HeaderProps = {};
 
-type Props = {};
-
-export const Header = ({}: Props) => {
-  return <div>Header</div>;
+export const Header: React.FC<HeaderProps> = ({}) => {
+  return (
+    <div>
+      <SocialIcon url="https://linkedin.com/in/jaketrent" />
+      Header
+    </div>
+  );
 };
