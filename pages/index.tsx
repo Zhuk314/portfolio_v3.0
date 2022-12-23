@@ -1,17 +1,17 @@
 import Head from "next/head";
 import type { NextPage } from "next";
-import { Header } from "../components/Header";
+import { Header, Welcome } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-backgroundPrimary">
+    <div>
       <Head>
         <title>Yurii Zhuk</title>
       </Head>
 
       <Header />
 
-      {/* Welcome */}
+      <Welcome />
 
       {/* About */}
 
