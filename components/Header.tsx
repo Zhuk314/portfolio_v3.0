@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
 const DURATION: number = 1;
-const ANIMATION_DISTANCE = 100;
+const ANIMATION_DISTANCE: number = 100;
 
 type HeaderProps = {};
 
@@ -11,6 +11,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
   return (
     <div className="flex flex-col justify-center md:flex-row md:justify-between bg-backgroundPrimary">
       <motion.div
+        className="px-5"
         initial={{ x: -ANIMATION_DISTANCE, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: DURATION }}
