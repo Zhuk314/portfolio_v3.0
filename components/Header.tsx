@@ -4,7 +4,7 @@ type HeaderProps = {};
 
 export const Header: React.FC<HeaderProps> = ({}) => {
   return (
-    <div className="flex flex-col justify-center md:flex-row md:justify-between">
+    <div className="flex flex-col justify-center md:flex-row md:justify-between bg-backgroundPrimary">
       <div>
         <p className="hidden md:inline-flex text-white text-5xl">
           <a href="#">Ж</a>
