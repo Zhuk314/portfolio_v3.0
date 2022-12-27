@@ -1,6 +1,6 @@
 import Head from "next/head";
 import type { NextPage } from "next";
-import { Header, Welcome } from "../components";
+import { Header, Welcome, About } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -9,11 +9,9 @@ const Home: NextPage = () => {
         <title>Yurii Zhuk</title>
       </Head>
 
-      <Header />
-
       <Welcome />
 
-      {/* About */}
+      <About />
 
       {/* Skills */}
 

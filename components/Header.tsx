@@ -12,7 +12,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
     <div
       id="welcome"
       className="flex flex-col justify-center md:flex-row md:justify-between 
-               bg-backgroundPrimary sticky top-0 max-w-7xl mx-auto"
+               bg-backgroundPrimary sticky top-0 max-w-7xl mx-auto z-10"
     >
       <motion.div
         className="hidden md:inline-flex text-white text-5xl px-10"
