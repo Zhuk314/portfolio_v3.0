@@ -4,7 +4,7 @@ import { Header, Welcome } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="">
       <Head>
         <title>Yurii Zhuk</title>
       </Head>
