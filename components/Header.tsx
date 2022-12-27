@@ -9,7 +9,11 @@ type HeaderProps = {};
 
 export const Header: React.FC<HeaderProps> = ({}) => {
   return (
-    <div className="flex flex-col justify-center md:flex-row md:justify-between bg-backgroundPrimary">
+    <div
+      id="welcome"
+      className="flex flex-col justify-center md:flex-row md:justify-between 
+               bg-backgroundPrimary sticky top-0 max-w-7xl mx-auto"
+    >
       <motion.div
         className="px-5"
         initial={{ x: -ANIMATION_DISTANCE, opacity: 0 }}

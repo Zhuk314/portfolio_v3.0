@@ -15,7 +15,7 @@ export const Welcome: React.FC = () => {
     delaySpeed: 2500,
   });
   return (
-    <section className="h-screen flex flex-col item-center justify-center bg-backgroundPrimary">
+    <section className="h-screen flex flex-col item-center justify-center bg-backgroundPrimary snap-center">
       <Image
         className="relative rounded-full mx-auto object-cover"
         src="/hero.jpg"
