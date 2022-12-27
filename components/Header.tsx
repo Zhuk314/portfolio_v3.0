@@ -15,14 +15,12 @@ export const Header: React.FC<HeaderProps> = ({}) => {
                bg-backgroundPrimary sticky top-0 max-w-7xl mx-auto"
     >
       <motion.div
-        className="px-5"
+        className="hidden md:inline-flex text-white text-5xl px-10"
         initial={{ x: -ANIMATION_DISTANCE, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: DURATION }}
       >
-        <div className="hidden md:inline-flex text-white text-5xl">
-          <a href="#">Ж</a>
-        </div>
+        <a href="#">Ж</a>
       </motion.div>
 
       <div className="flex flex-col justify-center md:flex-row md:justify-between md:w-80">
