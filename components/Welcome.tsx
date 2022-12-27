@@ -6,9 +6,9 @@ import profilePic from "../public/hero.jpg";
 export const Welcome: React.FC = () => {
   const [text, count] = useTypewriter({
     words: [
-      "Welcome to my portfolio page!",
+      "Welcome to my portfolio!",
       "How Are You Today?",
-      "I am Yurii Zhuk",
+      "I am Yurii Zhuk.",
       "Would You Like Some Coffee?",
     ],
     loop: true,
@@ -23,7 +23,7 @@ export const Welcome: React.FC = () => {
         width={225}
         height={225}
       />
-      <div className="relative mx-auto text-4xl md:text-6xl text-textPrimary text-center">
+      <div className="relative mx-auto text-4xl md:text-6xl text-textPrimary text-center lg:tracking-wider">
         <h1>
           <span>{text}</span>
           <Cursor />
