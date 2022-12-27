@@ -6,7 +6,7 @@ import profilePic from "../public/hero.jpg";
 export const Welcome: React.FC = () => {
   const [text, count] = useTypewriter({
     words: [
-      "Welcome!!!",
+      "Welcome to my portfolio page!",
       "How Are You Today?",
       "I am Yurii Zhuk",
       "Would You Like Some Coffee?",
