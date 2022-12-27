@@ -23,10 +23,12 @@ export const Welcome: React.FC = () => {
         width={225}
         height={225}
       />
-      <h1 className="relative mx-auto text-4xl md:text-6xl text-textPrimary text-center">
-        <span>{text}</span>
-        <Cursor />
-      </h1>
+      <div className="relative mx-auto text-4xl md:text-6xl text-textPrimary text-center">
+        <h1>
+          <span>{text}</span>
+          <Cursor />
+        </h1>
+      </div>
     </section>
   );
 };
