@@ -19,7 +19,7 @@ export const Welcome: React.FC = () => {
   });
   return (
     <section>
-      <div className="flex flex-col justify-center h-screen item-center bg-backgroundPrimary snap-center">
+      <div className="flex flex-col justify-center h-screen item-center bg-backgroundPrimary">
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: -50 }}
           animate={{ opacity: 1, scale: 1 }}
