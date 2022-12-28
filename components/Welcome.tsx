@@ -19,16 +19,14 @@ export const Welcome: React.FC = () => {
   });
   return (
     <section>
-      <Header />
-
-      <div className="h-screen flex flex-col item-center justify-center bg-backgroundPrimary snap-center">
+      <div className="flex flex-col justify-center h-screen item-center bg-backgroundPrimary snap-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: -50 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
         >
           <Image
-            className="relative rounded-full mx-auto object-cover"
+            className="relative object-cover mx-auto rounded-full"
             src="/hero.jpg"
             alt="profileImage"
             width={225}
@@ -37,7 +35,7 @@ export const Welcome: React.FC = () => {
         </motion.div>
 
         <motion.div
-          className="relative mx-auto text-4xl md:text-6xl text-textPrimary text-center lg:tracking-wider"
+          className="relative mx-auto text-4xl text-center md:text-6xl text-textPrimary lg:tracking-wider"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 3, delay: 2 }}

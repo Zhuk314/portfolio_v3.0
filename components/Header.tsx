@@ -11,11 +11,10 @@ export const Header: React.FC<HeaderProps> = ({}) => {
   return (
     <div
       id="welcome"
-      className="flex flex-col justify-center md:flex-row md:justify-between 
-               bg-backgroundPrimary sticky top-0 max-w-7xl mx-auto z-10"
+      className="sticky top-0 z-10 flex flex-col justify-center mx-auto md:flex-row md:justify-between bg-backgroundPrimary max-w-7xl"
     >
       <motion.div
-        className="hidden md:inline-flex text-white text-5xl px-10"
+        className="hidden px-10 text-5xl text-white md:inline-flex"
         initial={{ x: -ANIMATION_DISTANCE, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: DURATION }}
@@ -25,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
 
       <div className="flex flex-col justify-center md:flex-row md:justify-between md:w-80">
         <motion.p
-          className="text-white flex justify-center text-2xl p-2 font-light"
+          className="flex justify-center p-2 text-2xl font-light text-white"
           initial={{ y: -ANIMATION_DISTANCE, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: DURATION }}
@@ -33,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           <a href="#">About</a>
         </motion.p>
         <motion.p
-          className="text-white flex justify-center text-2xl p-2 font-light"
+          className="flex justify-center p-2 text-2xl font-light text-white"
           initial={{ y: -ANIMATION_DISTANCE, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: DURATION, delay: 0.2 }}
@@ -41,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           <a href="#">Skills</a>
         </motion.p>
         <motion.p
-          className="text-white flex justify-center text-2xl p-2 font-light"
+          className="flex justify-center p-2 text-2xl font-light text-white"
           initial={{ y: -ANIMATION_DISTANCE, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: DURATION, delay: 0.4 }}
@@ -66,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           fgColor="white"
           bgColor="transparent"
         />
-        <div className="cursor-pointer text-white">
+        <div className="text-white cursor-pointer">
           <SocialIcon
             className="cursor-ponter"
             network="email"

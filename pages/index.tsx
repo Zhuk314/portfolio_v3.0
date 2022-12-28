@@ -4,10 +4,12 @@ import { Header, Welcome, About } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-backgroundPrimary h-screen snap-y snap-mandatory overflow-scroll">
+    <div className="h-screen overflow-scroll bg-backgroundPrimary snap-y snap-mandatory">
       <Head>
         <title>Yurii Zhuk</title>
       </Head>
+
+      <Header />
 
       <Welcome />
 
