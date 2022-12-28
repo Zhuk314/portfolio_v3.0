@@ -7,7 +7,7 @@ import { Header } from "./Header";
 export const Welcome: React.FC = () => {
   const [text] = useTypewriter({
     words: [
-      "Welcome to my portfolio!",
+      "Hello and Welcome!",
       "How Are You Today?",
       "I am Yurii Zhuk.",
       "Would You Like Some Coffee?",
@@ -18,8 +18,9 @@ export const Welcome: React.FC = () => {
     deleteSpeed: 35,
   });
   return (
-    <section>
-      <div className="flex flex-col justify-center h-screen item-center bg-backgroundPrimary">
+    <div id="welcome" className="h-screen bg-backgroundPrimary">
+      <Header />
+      <div className="flex flex-col justify-center h-screen overflow-hidden item-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: -50 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -28,24 +29,19 @@ export const Welcome: React.FC = () => {
           <Image
             className="relative object-cover mx-auto rounded-full"
             src="/hero.jpg"
-            alt="profileImage"
+            alt="Profile Image"
             width={225}
             height={225}
           />
         </motion.div>
 
-        <motion.div
-          className="relative mx-auto text-4xl text-center md:text-6xl text-textPrimary lg:tracking-wider"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3, delay: 2 }}
-        >
+        <motion.div className="relative mx-auto text-4xl text-center md:text-6xl text-textPrimary lg:tracking-wider">
           <h1>
             <span>{text}</span>
-            <Cursor />
+            <Cursor cursorBlinking={false} />
           </h1>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };

@@ -4,12 +4,11 @@ import { Header, Welcome, About } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="h-screen overflow-scroll bg-backgroundPrimary">
+    <div className="bg-backgroundPrimary">
       <Head>
         <title>Yurii Zhuk</title>
       </Head>
 
-      <Header />
       <Welcome />
 
       <About />
