@@ -23,7 +23,7 @@ export const Welcome: React.FC = () => {
       <div className="flex flex-col justify-center h-screen overflow-hidden item-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: -50 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
         >
           <Image
