@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: DURATION }}
         >
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </motion.p>
         <motion.p
           className="flex justify-center p-2 text-2xl font-light text-white"
@@ -34,7 +34,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: DURATION, delay: 0.2 }}
         >
-          <a href="#">Skills</a>
+          <a href="#skills">Skills</a>
         </motion.p>
         <motion.p
           className="flex justify-center p-2 text-2xl font-light text-white"
