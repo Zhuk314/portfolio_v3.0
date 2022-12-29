@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const About: React.FC = ({}) => {
   return (
-    <div className="flex flex-col h-screen mx-auto space-y-8 text-center">
+    <div className="flex flex-col mx-auto mb-10 space-y-8 text-center h-fit">
       <h3 className="title">About</h3>
 
       <div className="flex flex-col items-center m-auto space-y-5 lg:w-11/12 lg:space-y-0 lg:space-x-5 xl:space-x-20 lg:items-start lg:flex-row max-w-7xl">
