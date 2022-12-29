@@ -6,7 +6,9 @@
   .paragraph {
     @apply text-xl lg:text-2xl text-textPrimary;
   }
+
   .title {
     @apply text-3xl tracking-[25px] uppercase md:text-4xl text-textPrimary;
   }
+
 }
