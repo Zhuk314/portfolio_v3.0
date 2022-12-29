@@ -9,9 +9,13 @@ const Home: NextPage = () => {
         <title>Yurii Zhuk</title>
       </Head>
 
-      <Welcome />
+      <section id="home">
+        <Welcome />
+      </section>
 
-      <About />
+      <section id="about">
+        <About />
+      </section>
 
       {/* Skills */}
 
