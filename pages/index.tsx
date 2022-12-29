@@ -9,7 +9,6 @@ const Home: NextPage = () => {
         <title>Yurii Zhuk</title>
       </Head>
 
-
       <section id="home">
         <Welcome />
       </section>
@@ -17,7 +16,6 @@ const Home: NextPage = () => {
       <section id="about">
         <About />
       </section>
-
 
       <section id="skills">
         <Skills />

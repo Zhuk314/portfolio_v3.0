@@ -4,12 +4,10 @@ import Image from "next/image";
 export const About: React.FC = ({}) => {
   return (
     <div className="flex flex-col h-screen mx-auto space-y-8 text-center">
-
       <h3 className="title">About</h3>
 
       <div className="flex flex-col items-center m-auto space-y-5 lg:w-11/12 lg:space-y-0 lg:space-x-5 xl:space-x-20 lg:items-start lg:flex-row max-w-7xl">
         <div className="flex justify-center lg:w-1/2">
-
           <Image
             className="w-80 rounded-full md:rounded-3xl lg:w-[400px] xl:w-[500px] xl:rounded-xl"
             src={"/hero_about.jpg"}
@@ -20,7 +18,6 @@ export const About: React.FC = ({}) => {
         </div>
 
         <div className="w-10/12 space-y-3 text-justify lg:w-1/2">
-
           <p className="paragraph">
             My name is Yurii Zhuk and I am software developer graduated from
             Green River College.
