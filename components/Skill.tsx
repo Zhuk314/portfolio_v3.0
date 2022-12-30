@@ -9,12 +9,14 @@ type SkillProps = {
 export const Skill: React.FC<SkillProps> = ({ name, isLeft, ...props }) => {
   return (
     <div
-      className=" relative m-auto text-xl max-w-96 text-textPrimary bg-gradient-to-r 
-      from-[#092143] to-[#FE4D5B] rounded-full p-2"
+      className="flex flex-row m-auto text-xl w-3/4 max-w-sm text-textPrimary bg-gradient-to-r 
+      from-[#092143] to-[#FE4D5B] rounded-full p-2 overflow-hidden"
       {...props}
     >
-      <BadgeCheck className="w-8 fill-[#30CC8E]" />
-      <span className="mx-20">{name}</span>
+      <div className="px-5">
+        <BadgeCheck className="w-8 fill-[#30CC8E]" />
+      </div>
+      <span className="">{name}</span>
     </div>
   );
 };
