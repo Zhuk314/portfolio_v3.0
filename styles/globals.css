@@ -8,6 +8,6 @@
   }
 
   .title {
-    @apply text-3xl tracking-[10px] md:tracking-[25px] uppercase md:text-4xl text-textPrimary;
+    @apply text-3xl tracking-[10px] md:tracking-[25px] uppercase md:text-4xl text-textPrimary p-5;
   }
 }
