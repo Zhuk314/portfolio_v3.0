@@ -3,7 +3,8 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
 const DURATION: number = 1;
-const ANIMATION_DISTANCE: number = 100;
+const ANIMATION_DISTANCE: number = 30;
+const INIT_OPACITY: number = 0;
 
 type HeaderProps = {};
 
@@ -12,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
     <div className="z-10 flex flex-col justify-center mx-auto md:flex-row md:justify-between bg-backgroundPrimary max-w-7xl">
       <motion.div
         className="hidden px-10 text-5xl text-white md:inline-flex"
-        initial={{ x: -ANIMATION_DISTANCE, opacity: 0 }}
+        initial={{ x: -ANIMATION_DISTANCE, opacity: INIT_OPACITY }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: DURATION }}
       >
@@ -22,7 +23,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
       <div className="flex flex-col justify-center md:flex-row md:justify-between md:w-80">
         <motion.p
           className="flex justify-center p-2 text-2xl font-light text-white"
-          initial={{ y: -ANIMATION_DISTANCE, opacity: 0 }}
+          initial={{ y: -ANIMATION_DISTANCE, opacity: INIT_OPACITY }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: DURATION }}
         >
@@ -30,7 +31,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
         </motion.p>
         <motion.p
           className="flex justify-center p-2 text-2xl font-light text-white"
-          initial={{ y: -ANIMATION_DISTANCE, opacity: 0 }}
+          initial={{ y: -ANIMATION_DISTANCE, opacity: INIT_OPACITY }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: DURATION, delay: 0.2 }}
         >
@@ -38,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
         </motion.p>
         <motion.p
           className="flex justify-center p-2 text-2xl font-light text-white"
-          initial={{ y: -ANIMATION_DISTANCE, opacity: 0 }}
+          initial={{ y: -ANIMATION_DISTANCE, opacity: INIT_OPACITY }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: DURATION, delay: 0.4 }}
         >
@@ -48,7 +49,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
 
       <motion.div
         className="flex justify-center"
-        initial={{ x: ANIMATION_DISTANCE, opacity: 0 }}
+        initial={{ x: ANIMATION_DISTANCE, opacity: INIT_OPACITY }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: DURATION }}
       >
